@@ -7,7 +7,6 @@ pub fn run_loop() {
   for x in start_value..end_value {
     println!("{}", x);
   }
-  let duration = start.elapsed();
-  let elapsed = duration.as_secs() as f64;
-  println!("Iteration from {:?} to {:?} took: {:?}", start_value, end_value, elapsed);
+  let end = Instant::now();
+  println!("Iteration from {:?} to {:?} took: {:?}", start_value, end_value, end.duration_since(start));
 }
