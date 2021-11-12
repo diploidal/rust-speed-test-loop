@@ -12,3 +12,9 @@ cargo run
 ```
 
 and wait for the result. 😀🦀
+
+> If the `cargo check` or `cargo run` fails and there is an error connected with something like `cc linker` then make sure you have `build-essential` installed on Your machine.
+
+```sh
+$ sudo apt install build-essential
+```
